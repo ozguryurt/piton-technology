@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .contact-input {
+        @apply w-full py-5 px-10 border-2 border-input focus:outline-0 lg:text-2xl text-base placeholder:text-black placeholder:font-semibold text-black font-semibold;
+    }
+
+    .container {
+        @apply w-full my-32 lg:px-28 px-2;
+    }
+}

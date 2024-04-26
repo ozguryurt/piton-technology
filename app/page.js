@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <>
       <section>
-        <div className="relative w-full bg-main lg:h-[60rem] h-screen overflow-hidden">
-          <div className="relative w-full h-full flex flex-col justify-end items-center gap-40 z-[3]">
-            <span className="text-black text-3xl lg:text-6xl font-bold text-center">
+        <div className="relative w-full h-screen overflow-hidden bg-main">
+          <div className="relative w-full h-full flex flex-col justify-end items-center lg:gap-5 gap-40 z-[3]">
+            <span className="text-lightblack text-3xl lg:text-8xl font-bold text-center">
               Let’s create something<br />great together.
             </span>
             <Image
@@ -16,7 +16,7 @@ export default function Home() {
               width={2936}
               height={776}
               alt="Hero Background Image"
-              className='lg:w-8/12 w-full'
+              className='lg:w-10/12 w-full'
             />
           </div>
           <Image
@@ -24,29 +24,29 @@ export default function Home() {
             width={513}
             height={669}
             alt="Hero Background Shape 1"
-            className='absolute inset-0 me-auto lg:top-44 lg:left-72 top-34 -left-32 z-[1] w-[auto]'
+            className='absolute inset-0 me-auto lg:top-44 lg:left-36 top-34 -left-32 z-[1] w-[auto]'
           />
           <Image
             src="/hero_shape2.svg"
             width={1286}
             height={970}
             alt="Hero Background Shape 2"
-            className='absolute inset-0 ms-auto lg:top-5 lg:right-24 top-80 -right-20 z-[2] w-8/12'
+            className='absolute inset-0 ms-auto lg:top-5 lg:right-32 top-80 -right-20 z-[2] w-8/12'
           />
         </div>
       </section>
       <section>
-        <div className="w-full my-32 lg:px-72 px-2">
-          <p className="text-black text-4xl font-extrabold lg:text-start text-center mb-5">
+        <div className="container">
+          <p className="text-lightblack lg:text-5xl text-2xl font-extrabold lg:text-start text-center mb-5">
             Who are we
           </p>
-          <p className="text-black text-lg font-semibold lg:text-start text-center">
+          <p className="text-lightblack lg:text-2xl text-base font-semibold lg:text-start text-center">
             We love what we do and create partnerships with our clients to ensure their digital transformation is positioned for long-term success.We believe that the human dimensions essential to start any successful project and that this is where splendid emotional relationships between the company and people are born.
           </p>
         </div>
       </section>
       <section>
-        <div className="w-full my-32 lg:px-72 px-2 flex justify-center items-center">
+        <div className="container flex justify-center items-center">
           <Image
             src="/mid_image.png"
             width="3056"
@@ -57,11 +57,11 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="w-full my-32 lg:px-72 px-2 flex flex-col justify-center items-center">
-          <p className="text-black text-4xl font-extrabold text-center">
+        <div className="container flex flex-col justify-center items-center">
+          <p className="text-lightblack lg:text-5xl text-2xl font-extrabold text-center">
             Meet the heroes behind the magic
           </p>
-          <div className="grid lg:grid-cols-3 grid-cols-1 mt-16 gap-x-10 gap-y-5">
+          <div className="grid lg:grid-cols-3 grid-cols-1 mt-16 px-10 gap-x-10 gap-y-5">
             <TeamCard
               image="/team_founder.png"
               name="Esther Howard"
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="w-full my-32 bg-black lg:px-32 px-0 flex lg:justify-between lg:flex-row flex-col">
+        <div className="w-full my-32 lg:px-32 px-0 lg:py-10 py-0 bg-lightblack flex lg:justify-between lg:flex-row flex-col">
           <MetricCard
             count="350 +"
             text="Clients Worldwide"
@@ -101,7 +101,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="w-full my-32 lg:px-72 px-2 grid lg:grid-cols-2 grid-cols-1 gap-x-24 gap-y-5">
+        <div className="container grid lg:grid-cols-2 grid-cols-1 gap-x-24 gap-y-5">
           <div className='flex justify-center items-start'>
             <Image
               src="/side_image.png"
@@ -111,15 +111,15 @@ export default function Home() {
               className='lg:w-[75%] h-auto'
             />
           </div>
-          <div className='flex flex-col justify-center items-center gap-y-5 h-full'>
-            <p className='w-full text-black text-4xl font-extrabold text-center lg:text-end'>
+          <div className='flex flex-col justify-between items-center gap-y-5'>
+            <span className='text-lightblack lg:text-6xl text-3xl font-extrabold lg:text-end text-center w-full'>
               We'd love to hear<br />from you
-            </p>
-            <input type="text" placeholder='Name*' className='w-full p-5 border-2 border-input focus:outline-0' />
-            <input type="email" placeholder='Email*' className='w-full p-5 border-2 border-input focus:outline-0' />
-            <input type="text" placeholder='Website URL*' className='w-full p-5 border-2 border-input focus:outline-0' />
-            <textarea type="text" placeholder='Project Details*' className='w-full min-h-[10rem] p-5 border-2 border-input focus:outline-0' />
-            <button className='w-full p-5 bg-black text-white'>Send Proposal</button>
+            </span>
+            <input type="text" placeholder='Name*' className='contact-input' />
+            <input type="email" placeholder='Email*' className='contact-input' />
+            <input type="text" placeholder='Website URL*' className='contact-input' />
+            <textarea type="text" placeholder='Project Details*' className='contact-input min-h-[10rem]' />
+            <button className='w-full p-5 bg-lightblack text-white lg:text-2xl text-base py-8'>Send Proposal</button>
           </div>
         </div>
       </section>
